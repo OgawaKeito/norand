@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <title>ロラネイター</title>
+  </head>
+  <body class="body">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $('.question').outerHeight($(window).height());
+        $('.body').outerHeight($(window).height());
+    });
+    $(window).on('resize',function(){
+        winH = $(window).height();
+        $('.question').outerHeight(winH);
+        $('.body').outerHeight(winH);
+    });
+    </script>
+    <div class="question" id="question">
+        <div class="main-wrap">
+            <div class="inner">
+                <div class="img">
+                    <img src="img/ROLAND.png" alt="ROLAND">
+                </div>
+                <div class="bubble">
+                    <p>俺？</p>
+                </div>
+            </div>
+        </div>
+        <div id="yes">
+            <span>はい</span>
+        </div>
+        <div id="no">
+            <span>いいえ</span>
+        </div>
+    </div>
+    <div class="roland" id="roland">
+        <span>俺</span>
+    </div>
+    <div class="noland" id="noland">
+        <span>俺以外</span>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

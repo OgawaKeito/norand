@@ -74,6 +74,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 30px;
     font-weight: bold;
     position: fixed;

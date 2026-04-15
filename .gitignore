@@ -1,0 +1,13 @@
+# OS系
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタ系
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 静的サイト向け
+node_modules/
